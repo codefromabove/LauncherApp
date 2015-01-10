@@ -12,7 +12,7 @@
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
-@property (nonatomic, strong) IBOutlet LauncherViewController *launcherViewController;
+@property (nonatomic, strong) LauncherViewController *launcherViewController;
 
 @end
 
@@ -28,6 +28,10 @@
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+}
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
+    return YES;
 }
 
 - (IBAction)testButton:(id)sender {
