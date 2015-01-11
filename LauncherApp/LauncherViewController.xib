@@ -14,21 +14,21 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="459" height="126"/>
+            <rect key="frame" x="0.0" y="0.0" width="459" height="250"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0LV-jG-m6U">
-                    <rect key="frame" x="192" y="26" width="85" height="32"/>
-                    <buttonCell key="cell" type="push" title="Launch" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vv9-ba-o7k">
+                    <rect key="frame" x="57" y="150" width="360" height="32"/>
+                    <buttonCell key="cell" type="push" title="Launch With On-the-fly Script Using System Call" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vv9-ba-o7k">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
-                        <action selector="launchAction:" target="-2" id="5iI-Ca-978"/>
+                        <action selector="launchWithOnTheFlyScriptUsingSystemCallAction:" target="-2" id="fMx-DL-DGj"/>
                     </connections>
                 </button>
                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n7t-WN-gAH">
-                    <rect key="frame" x="63" y="72" width="242" height="22"/>
+                    <rect key="frame" x="63" y="196" width="242" height="22"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="JM8-hp-7OY">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -36,7 +36,7 @@
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JR1-Mj-F2l">
-                    <rect key="frame" x="314" y="65" width="85" height="32"/>
+                    <rect key="frame" x="314" y="189" width="85" height="32"/>
                     <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eDZ-co-hM2">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -45,8 +45,38 @@
                         <action selector="browseAction:" target="-2" id="cd4-64-0Ox"/>
                     </connections>
                 </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTq-Zz-arn">
+                    <rect key="frame" x="57" y="84" width="360" height="32"/>
+                    <buttonCell key="cell" type="push" title="Launch With Bundled Script WIth Parameters" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Olz-Fd-8y9">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <connections>
+                            <action selector="launchWithBundledScriptWithParametersAction:" target="-2" id="pby-6B-llB"/>
+                        </connections>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VtX-w1-0Dr">
+                    <rect key="frame" x="57" y="51" width="360" height="32"/>
+                    <buttonCell key="cell" type="push" title="Launch With Bundled Hard-Coded Script" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Khm-bc-Nig">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <connections>
+                            <action selector="launchWithHardCodedScriptAction:" target="-2" id="d40-Ku-ZEI"/>
+                        </connections>
+                    </buttonCell>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GIl-m8-9s4">
+                    <rect key="frame" x="57" y="117" width="362" height="32"/>
+                    <buttonCell key="cell" type="push" title="Launch With On-the-fly Script Using NSAppleScript" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Rq7-s6-bRP">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="launchWithOnTheFlyScriptUsingNSAppleScriptAction:" target="-2" id="KkR-ht-BrF"/>
+                    </connections>
+                </button>
             </subviews>
-            <point key="canvasLocation" x="129.5" y="82"/>
+            <point key="canvasLocation" x="237.5" y="145"/>
         </customView>
     </objects>
 </document>

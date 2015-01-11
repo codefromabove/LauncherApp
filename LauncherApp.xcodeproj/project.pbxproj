@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66118B5F1A62D094000C75E8 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66118B5E1A62D094000C75E8 /* Carbon.framework */; };
+		66118B631A62D1D7000C75E8 /* LaunchParameterizedScript.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 66118B621A62D1D7000C75E8 /* LaunchParameterizedScript.applescript */; };
 		66F652F61A6191AE00BC460D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F652F51A6191AE00BC460D /* AppDelegate.m */; };
 		66F652F81A6191AE00BC460D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F652F71A6191AE00BC460D /* main.m */; };
 		66F652FA1A6191AE00BC460D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F652F91A6191AE00BC460D /* Images.xcassets */; };
@@ -14,6 +16,8 @@
 		66F653091A6191AF00BC460D /* LauncherAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F653081A6191AF00BC460D /* LauncherAppTests.m */; };
 		66F6531A1A61942300BC460D /* LauncherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66F653181A61942300BC460D /* LauncherViewController.m */; };
 		66F6531B1A61942300BC460D /* LauncherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66F653191A61942300BC460D /* LauncherViewController.xib */; };
+		66F653351A62060C00BC460D /* LaunchWithSystemCall.c in Sources */ = {isa = PBXBuildFile; fileRef = 66F653331A62060C00BC460D /* LaunchWithSystemCall.c */; };
+		66F653381A62CADE00BC460D /* LaunchHardCodedScript.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 66F653371A62CADE00BC460D /* LaunchHardCodedScript.applescript */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		66118B5E1A62D094000C75E8 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		66118B621A62D1D7000C75E8 /* LaunchParameterizedScript.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = LaunchParameterizedScript.applescript; sourceTree = SOURCE_ROOT; };
 		66F652EF1A6191AE00BC460D /* LauncherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LauncherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F652F31A6191AE00BC460D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66F652F41A6191AE00BC460D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +46,9 @@
 		66F653171A61942300BC460D /* LauncherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherViewController.h; sourceTree = "<group>"; };
 		66F653181A61942300BC460D /* LauncherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherViewController.m; sourceTree = "<group>"; };
 		66F653191A61942300BC460D /* LauncherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LauncherViewController.xib; sourceTree = "<group>"; };
+		66F653331A62060C00BC460D /* LaunchWithSystemCall.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LaunchWithSystemCall.c; sourceTree = "<group>"; };
+		66F653341A62060C00BC460D /* LaunchWithSystemCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchWithSystemCall.h; sourceTree = "<group>"; };
+		66F653371A62CADE00BC460D /* LaunchHardCodedScript.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = LaunchHardCodedScript.applescript; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66118B5F1A62D094000C75E8 /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +75,7 @@
 			children = (
 				66F652F11A6191AE00BC460D /* LauncherApp */,
 				66F653051A6191AF00BC460D /* LauncherAppTests */,
+				66F653211A61CBB600BC460D /* Frameworks */,
 				66F652F01A6191AE00BC460D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +92,7 @@
 		66F652F11A6191AE00BC460D /* LauncherApp */ = {
 			isa = PBXGroup;
 			children = (
+				66F653361A62CACD00BC460D /* Scripts */,
 				66F652F41A6191AE00BC460D /* AppDelegate.h */,
 				66F652F51A6191AE00BC460D /* AppDelegate.m */,
 				66F652F91A6191AE00BC460D /* Images.xcassets */,
@@ -89,6 +101,8 @@
 				66F653171A61942300BC460D /* LauncherViewController.h */,
 				66F653181A61942300BC460D /* LauncherViewController.m */,
 				66F653191A61942300BC460D /* LauncherViewController.xib */,
+				66F653331A62060C00BC460D /* LaunchWithSystemCall.c */,
+				66F653341A62060C00BC460D /* LaunchWithSystemCall.h */,
 			);
 			path = LauncherApp;
 			sourceTree = "<group>";
@@ -119,6 +133,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		66F653211A61CBB600BC460D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66118B5E1A62D094000C75E8 /* Carbon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66F653361A62CACD00BC460D /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				66118B621A62D1D7000C75E8 /* LaunchParameterizedScript.applescript */,
+				66F653371A62CADE00BC460D /* LaunchHardCodedScript.applescript */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,6 +160,7 @@
 				66F652EB1A6191AE00BC460D /* Sources */,
 				66F652EC1A6191AE00BC460D /* Frameworks */,
 				66F652ED1A6191AE00BC460D /* Resources */,
+				66118B5B1A62CC79000C75E8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -214,12 +246,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		66118B5B1A62CC79000C75E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "osacompile -d -o LaunchHardCodedScript.scpt     LaunchHardCodedScript.applescript\nosacompile -d -o LaunchParameterizedScript.scpt LaunchParameterizedScript.applescript";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		66F652EB1A6191AE00BC460D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				66F6531A1A61942300BC460D /* LauncherViewController.m in Sources */,
+				66F653381A62CADE00BC460D /* LaunchHardCodedScript.applescript in Sources */,
+				66F653351A62060C00BC460D /* LaunchWithSystemCall.c in Sources */,
+				66118B631A62D1D7000C75E8 /* LaunchParameterizedScript.applescript in Sources */,
 				66F652F81A6191AE00BC460D /* main.m in Sources */,
 				66F652F61A6191AE00BC460D /* AppDelegate.m in Sources */,
 			);
@@ -408,6 +459,7 @@
 				66F6530E1A6191AF00BC460D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66F6530F1A6191AF00BC460D /* Build configuration list for PBXNativeTarget "LauncherAppTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +468,7 @@
 				66F653111A6191AF00BC460D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,1 @@
+tell application "TextEdit" to runtell application "TextEdit" to activate
