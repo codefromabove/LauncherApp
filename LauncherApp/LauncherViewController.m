@@ -146,7 +146,7 @@
                                                                                                length:sizeof(ProcessSerialNumber)];
 
                 // create an NSAppleEventDescriptor with the script's method name to call,
-                // this is used for the script statement: "on launch_app(user_message)"
+                // this is used for the script statement: "on launch_app(app_name)"
                 // Note that the routine name must be in lower case.
                 NSAppleEventDescriptor *handler = [NSAppleEventDescriptor descriptorWithString: [@"launch_app" lowercaseString]];
 
