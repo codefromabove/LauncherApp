@@ -37,7 +37,7 @@
     [openDialog setDirectoryURL:[NSURL URLWithString:@"/Applications"]];
     [openDialog setAllowedFileTypes:[NSArray arrayWithObjects:@"app", nil]];
 
-    if ([openDialog runModal] == NSOKButton)
+    if ([openDialog runModal] == NSModalResponseOK)
     {
         NSArray  *urls           = [openDialog URLs];
         NSString *path           = [urls objectAtIndex:0];
