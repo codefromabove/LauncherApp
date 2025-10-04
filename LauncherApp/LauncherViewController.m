@@ -10,6 +10,7 @@
 #include "LaunchWithSystemCall.h"
 
 #include <Carbon/Carbon.h>
+#import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 
 @interface LauncherViewController ()
 @property (weak) IBOutlet NSTextField *appOutlet;
@@ -35,8 +36,8 @@
     [openDialog setCanChooseDirectories:NO];
     [openDialog setAllowsMultipleSelection:NO];
     [openDialog setDirectoryURL:[NSURL URLWithString:@"/Applications"]];
-    [openDialog setAllowedFileTypes:[NSArray arrayWithObjects:@"app", nil]];
-
+    [openDialog setAllowedContentTypes:@[ [UTType importedTypeWithIdentifier:@"app"]]];
+    
     if ([openDialog runModal] == NSModalResponseOK)
     {
         NSArray  *urls           = [openDialog URLs];
