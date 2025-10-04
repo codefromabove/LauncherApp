@@ -23,4 +23,5 @@ void launchWithSystemCall(const char * const app)
     sprintf(commandLine, "osascript -e \"%s\"", scriptCode);
 
     int result = system(commandLine);
+    printf("result: %d", result);
 }
